@@ -112,7 +112,7 @@ export class PolymarketTrading {
 			cfg.funderAddress,
 		);
 
-		console.log("✓ Polymarket trading client initialized");
+		console.log("Polymarket trading client initialized");
 		console.log(`  - Signer: ${await ethersSigner.getAddress()}`);
 		console.log(`  - Signature Type: ${cfg.signatureType}`);
 		if (cfg.funderAddress) {
@@ -253,7 +253,7 @@ export class PolymarketTrading {
 
 		const client = this.getClient();
 
-		console.log(`📝 Placing ${args.side} order:`);
+		console.log(`Placing ${args.side} order:`);
 		console.log(`   Token: ${args.tokenId}`);
 		console.log(`   Price: ${args.price}`);
 		console.log(`   Size: ${args.size}`);
@@ -304,7 +304,7 @@ export class PolymarketTrading {
 
 		const client = this.getClient();
 
-		console.log(`🚀 Placing ${args.side} market order:`);
+		console.log(`Placing ${args.side} market order:`);
 		console.log(`   Token: ${args.tokenId}`);
 		console.log(`   Amount: ${args.amount}`);
 		console.log(

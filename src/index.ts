@@ -43,11 +43,11 @@ async function main() {
 		server.addTool(tools.getPositionsTool);
 
 		console.log(
-			"✅ Trading features enabled (POLYMARKET_PRIVATE_KEY is configured)",
+			"Trading features enabled (POLYMARKET_PRIVATE_KEY is configured)",
 		);
 	} else {
 		console.warn(
-			"ℹ️ Read-only mode: Set POLYMARKET_PRIVATE_KEY environment variable to enable trading features",
+			"Read-only mode: Set POLYMARKET_PRIVATE_KEY environment variable to enable trading features",
 		);
 	}
 
@@ -57,6 +57,6 @@ async function main() {
 }
 
 main().catch((error) => {
-	console.error("🚨 Failed to start MCP server:", error);
+	console.error("Failed to start MCP server:", error);
 	process.exit(1);
 });
