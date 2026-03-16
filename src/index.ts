@@ -42,12 +42,12 @@ async function main() {
 		server.addTool(tools.redeemPositionsTool);
 		server.addTool(tools.getPositionsTool);
 
-		console.log(
-			"Trading features enabled (POLYMARKET_PRIVATE_KEY is configured)",
+		process.stderr.write(
+			"Trading features enabled (POLYMARKET_PRIVATE_KEY is configured)\n",
 		);
 	} else {
-		console.warn(
-			"Read-only mode: Set POLYMARKET_PRIVATE_KEY environment variable to enable trading features",
+		process.stderr.write(
+			"Read-only mode: Set POLYMARKET_PRIVATE_KEY environment variable to enable trading features\n",
 		);
 	}
 

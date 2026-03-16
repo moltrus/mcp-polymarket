@@ -226,7 +226,7 @@ export class PolymarketApprovals {
 			if (current.missing.includes(key)) {
 				const hash = await this.sendTx(fn, nonce++, waitConfs);
 				txHashes.push(hash);
-				console.log(`Approved ${label}: ${hash}`);
+				process.stderr.write(`Approved ${label}: ${hash}\n`);
 			}
 		}
 
